@@ -19,7 +19,7 @@ class Temperature:
     try:
       self.value = int(s[1:])
     except ValueError:
-      # Making type invalid if case of numeric parsing error
+      # Making type invalid in case of numeric parsing error
       self.type = "_"
 
 # Temperature converter. This is a user-facing class
@@ -28,7 +28,7 @@ class TemperatureConverter:
   _temperature: Temperature = Temperature()
   _raw_input_string: str = ""
 
-  # Is input valid
+  # Is user input valid
   def is_input_valid(self):
     return self._temperature.is_valid()
 
