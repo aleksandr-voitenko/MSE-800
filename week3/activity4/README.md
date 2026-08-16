@@ -2,18 +2,6 @@
 
 This project revises the supplied ER diagram and implements the database using Python's built-in `sqlite3` module.
 
-## ER diagram review and changes
-
-Changes made to the original diagram:
-
-1. `Enrollment` stores `Course_name` and `CC#`, although course/subject information should be stored once in its own entity.
-2. `Student`, `Enrollment`, and `Lecture` are connected through a ternary `Enrolls` relationship. In a normal university model, a student enrolls in a **course**, while lectures are scheduled teaching events belonging to that course.
-3. `Lecturer` has an attribute called `Lecture_id`; this should be `lecturer_id`.
-4. `CC#` is ambiguous; it has been renamed `course_code`.
-5. `Subjects` and the course information in `Enrollment` represent the same business concept for this assignment. They have been consolidated into `Course`.
-6. `Subject_udsc` has been renamed `description`.
-7. The ternary `Lectures` relationship is replaced by foreign keys on `Lecture`.
-
 ## Updated ER model
 
 The diagram is created using `mermaid` notation.
@@ -84,18 +72,6 @@ erDiagram
 ├── README.md
 └── university.db  # created/populated when main.py is run
 ```
-
-## Sample data
-
-The seed includes:
-
-- 4 courses
-- 3 lecturers
-- 7 students
-- 6 lectures
-- 12 enrollment records
-
-Dates are stored as ISO-8601 `TEXT` values (`YYYY-MM-DD`), which is a common SQLite approach.
 
 ## Running the project
 
