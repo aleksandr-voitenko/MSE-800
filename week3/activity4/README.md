@@ -82,3 +82,20 @@ python main.py
 ```
 
 `main.py` recreates the schema, inserts the sample data, runs both required queries, and prints their results.
+
+## Output example
+
+```text
+1. Students registered in each course
+------------------------------------------------------------
+COMP101  Introduction to Programming      4
+DATA201  Database Systems                 4
+NET202   Computer Networks                2
+WEB203   Web Development                  2
+
+2. Students enrolled in more than one course
+------------------------------------------------------------
+S001   Alice Johnson                2 courses
+S003   Chloe Wilson                 2 courses
+S004   Daniel Kim                   3 courses
+```
