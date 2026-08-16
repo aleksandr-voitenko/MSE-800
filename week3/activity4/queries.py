@@ -9,10 +9,7 @@ FROM courses AS c
 LEFT JOIN enrollments AS e
     ON e.course_code = c.course_code
 GROUP BY
-    c.course_code,
-    c.course_name
-ORDER BY
-    c.course_code;
+    c.course_code
 """
 
 MULTI_COURSE_STUDENTS_SQL = """
@@ -25,12 +22,8 @@ FROM students AS s
 JOIN enrollments AS e
     ON e.student_id = s.student_id
 GROUP BY
-    s.student_id,
-    s.first_name,
-    s.last_name
+    s.student_id
 HAVING COUNT(DISTINCT e.course_code) > 1
-ORDER BY
-    s.student_id;
 """
 
 def get_course_registration_counts(conn: sqlite3.Connection) -> list[sqlite3.Row]:
