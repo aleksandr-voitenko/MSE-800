@@ -48,7 +48,7 @@ erDiagram
 
 ## Tables Description
 
-The database contains `4` `CUSTOMERS`, `CURRENCIES`, `EXCHANGE_RATES`, and `TRANSACTIONS`.
+The database contains `4` tables: `CUSTOMERS`, `CURRENCIES`, `EXCHANGE_RATES`, and `TRANSACTIONS`.
 
 The `CUSTOMERS` table stores information about people who use the exchange service.  This table is necessary because the business needs to know who makes each exchange transaction. 
 
