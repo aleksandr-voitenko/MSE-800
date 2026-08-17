@@ -1,7 +1,7 @@
 from money_exchange import MoneyExchangeError
 from money_exchange import MoneyExchangeSystem
 
-
+# Simple console UI wrapper around MoneyExchangeSystem
 class ConsoleApplication:
     """Simple console user interface."""
 
