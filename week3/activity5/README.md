@@ -28,6 +28,7 @@ erDiagram
         INTEGER exchange_rate_id FK
         REAL amount_from
         REAL amount_to
+        INTEGER rate_reversed "0 = direct, 1 = reverse"
         TEXT date_time "(YYYY-MM-DD HH:MM:SS.SSS)"
     }
 
