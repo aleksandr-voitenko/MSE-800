@@ -1,0 +1,1 @@
+The use case diagram shows how a system operator interacts with the Money Exchange System. The operator can view system data, exchange currency, remove transactions, manage customers, manage currencies, and manage exchange rates. All these functions are inside the system boundary, while the system operator is outside it.
