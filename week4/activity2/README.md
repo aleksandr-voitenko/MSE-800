@@ -14,24 +14,24 @@ swimlane-beta TB
 
   subgraph operator [System Operator]
     ex_start([Start])
-    ex_enter[Enter customer, currencies, and amount]
-    ex_result[View converted amount and rate]
-    ex_error[View error message]
+    ex_enter(Enter customer, currencies, and amount)
+    ex_result(View converted amount and rate)
+    ex_error(View error message)
     ex_end([End])
   end
 
   subgraph system [Money Exchange System]
-    ex_validate[Validate the entered values]
+    ex_validate(Validate the entered values)
     ex_valid{Are the values valid?}
     ex_records{Do the customer and currencies exist?}
     ex_rate{Is a direct or reverse rate available?}
-    ex_calculate[Calculate the converted amount]
+    ex_calculate(Calculate the converted amount)
   end
 
   subgraph database [Database]
-    ex_check[Look up customer and currencies]
-    ex_find_rate[Find the latest exchange rate]
-    ex_save[Save the transaction]
+    ex_check(Look up customer and currencies)
+    ex_find_rate(Find the latest exchange rate)
+    ex_save(Save the transaction)
   end
 
   ex_start --> ex_enter -->|Exchange request| ex_validate --> ex_valid
@@ -54,25 +54,25 @@ swimlane-beta TB
 
   subgraph operator [System Operator]
     mg_start([Start])
-    mg_choose[Choose customer, currency, or exchange rate]
+    mg_choose(Choose customer, currency, or exchange rate)
     mg_action{Add or remove?}
-    mg_details[Enter new item details]
-    mg_id[Enter item identifier]
-    mg_success[View success]
-    mg_error[View error message]
+    mg_details(Enter new item details)
+    mg_id(Enter item identifier)
+    mg_success(View success)
+    mg_error(View error message)
     mg_end([End])
   end
 
   subgraph system [Money Exchange System]
-    mg_validate[Validate and normalise details]
+    mg_validate(Validate and normalise details)
     mg_valid{Are the details valid?}
     mg_can_remove{Does the item exist and can it be removed?}
   end
 
   subgraph database [Database]
-    mg_save[Save the new item]
-    mg_check[Find the existing item and related records]
-    mg_delete[Delete the item]
+    mg_save(Save the new item)
+    mg_check(Find the existing item and related records)
+    mg_delete(Delete the item)
   end
 
   mg_start --> mg_choose --> mg_action
