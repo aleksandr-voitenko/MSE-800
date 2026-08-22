@@ -64,7 +64,7 @@ swimlane-beta TB
   end
 
   subgraph system [Money Exchange System]
-    mg_validate(Validate and normalise details)
+    mg_validate(Validate details)
     mg_valid{Are the details valid?}
     mg_can_remove{Does the item exist and can it be removed?}
   end
