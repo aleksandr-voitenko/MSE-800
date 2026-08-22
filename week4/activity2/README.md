@@ -2,7 +2,7 @@
 
 ### Number of diagrams
 
-2 activity diagrams is sufficient number for for the Money Exchange System. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
+2 activity diagrams is sufficient number for for the Money Exchange System that supports offline (cash only) operations and does not have online users. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
 
 ### Diagram 1. Exchange currency
 
