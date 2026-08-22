@@ -2,13 +2,7 @@
 
 ### Number of diagrams
 
-3 activity diagrams is the best number for for the current Money Exchange System. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
-
-The diagrams are:
-
-1. Exchange currency: shows how the operator creates a currency exchange transaction
-2. Manage customers, currencies, and exchange rates: shows the shared process for adding or removing the main system data
-3. View data and remove a transaction: shows how the operator reviews stored data and, when needed, deletes a transaction
+2 activity diagrams is sufficient number for for the Money Exchange System. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
 
 ### Diagram 1. Exchange currency
 
@@ -89,45 +83,4 @@ swimlane-beta TB
   mg_check -->|Check result| mg_can_remove
   mg_can_remove -->|No| mg_error
   mg_can_remove -->|Yes| mg_delete -->|Item deleted| mg_success
-```
-
-### Diagram 3. View data and remove a transaction
-
-This diagram shows the transaction review process. The operator can view all customers, currencies, rates, and transactions. After reviewing the information, the operator may finish or enter a transaction ID to remove a transaction. 
-
-```mermaid
-swimlane-beta TB
-  accTitle: View data and remove a transaction activity
-
-  subgraph operator [System Operator]
-    tx_start([Start])
-    tx_request[Choose Show all data]
-    tx_view[View customers, currencies, rates, and transactions]
-    tx_remove{Remove a transaction?}
-    tx_id[Enter transaction ID]
-    tx_success[View success]
-    tx_error[View error message]
-    tx_end([End])
-  end
-
-  subgraph system [Money Exchange System]
-    tx_get[Request all stored data]
-    tx_format[Prepare data for display]
-    tx_exists{Does the transaction exist?}
-  end
-
-  subgraph database [Database]
-    tx_read[Read all four data tables]
-    tx_find[Find the transaction]
-    tx_delete[Delete the transaction]
-  end
-
-  tx_start --> tx_request -->|Data request| tx_get --> tx_read
-  tx_read -->|Stored records| tx_format -->|Display data| tx_view
-  tx_view --> tx_remove
-  tx_remove -->|No| tx_end
-  tx_remove -->|Yes| tx_id -->|Transaction ID| tx_find
-  tx_find -->|Lookup result| tx_exists
-  tx_exists -->|No| tx_error --> tx_end
-  tx_exists -->|Yes| tx_delete -->|Transaction deleted| tx_success --> tx_end
 ```
