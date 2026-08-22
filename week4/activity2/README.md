@@ -1,27 +1,22 @@
-# Activity 2: Money Exchange System Activity Diagrams
+## Money Exchange System Activity Diagrams
 
-## Scope and number of diagrams
+### Number of diagrams
 
-I will create **3 activity diagrams** for the current Money Exchange System. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
+3 activity diagrams is the best number for for the current Money Exchange System. The project allows a system operator to manage customers, currencies, exchange rates, and currency exchange transactions.
 
 The diagrams are:
 
-1. **Exchange currency** — shows how the operator creates a currency exchange transaction.
-2. **Manage customers, currencies, and exchange rates** — shows the shared process for adding or removing the main system data.
-3. **View data and remove a transaction** — shows how the operator reviews stored data and, when needed, deletes a transaction.
+1. Exchange currency: shows how the operator creates a currency exchange transaction
+2. Manage customers, currencies, and exchange rates: shows the shared process for adding or removing the main system data
+3. View data and remove a transaction: shows how the operator reviews stored data and, when needed, deletes a transaction
 
-This set covers all functions in the current project. Future functions such as user accounts, reports, CAPTCHA checks, and separate administrator roles are not included.
-
-The diagrams use Mermaid's [`swimlane-beta`](https://mermaid.ai/open-source/syntax/swimlanes.html) notation. Mermaid version 11.16.0 or newer is required to render this notation.
-
-## Diagram 1: Exchange currency
+### Diagram 1. Exchange currency
 
 This diagram shows the main exchange process. The operator enters the customer, currencies, and amount. The system checks the information, finds the latest direct or reverse rate, calculates the result, and saves the transaction. If any required information or rate is missing, the operator sees an error.
 
 ```mermaid
 swimlane-beta TB
   accTitle: Exchange currency activity
-  accDescr: The operator enters an exchange request, the system validates and calculates it, and the database stores the completed transaction.
 
   subgraph operator [System Operator]
     ex_start([Start])
@@ -55,14 +50,13 @@ swimlane-beta TB
   ex_save -->|Saved transaction| ex_result --> ex_end
 ```
 
-## Diagram 2: Manage customers, currencies, and exchange rates
+### Diagram 2. Manage customers, currencies, and exchange rates
 
-This diagram represents the common maintenance process for customers, currencies, and exchange rates. The operator chooses the type of data and then chooses to add or remove it. New information must be valid before it is saved. An existing item must be found and must not be protected by related records before it can be removed.
+This diagram represents the common maintenance process for customers, currencies, and exchange rates. The operator chooses the type of data and then chooses to add or remove it. New information must be valid before it is saved. 
 
 ```mermaid
 swimlane-beta TB
   accTitle: Manage reference data activity
-  accDescr: The operator adds or removes a customer, currency, or exchange rate after the system checks the request.
 
   subgraph operator [System Operator]
     mg_start([Start])
@@ -97,14 +91,13 @@ swimlane-beta TB
   mg_can_remove -->|Yes| mg_delete -->|Item deleted| mg_success
 ```
 
-## Diagram 3: View data and remove a transaction
+### Diagram 3. View data and remove a transaction
 
-This diagram shows the transaction review process. The operator can view all customers, currencies, rates, and transactions. After reviewing the information, the operator may finish or enter a transaction ID to remove a transaction. The system reports an error when the transaction does not exist.
+This diagram shows the transaction review process. The operator can view all customers, currencies, rates, and transactions. After reviewing the information, the operator may finish or enter a transaction ID to remove a transaction. 
 
 ```mermaid
 swimlane-beta TB
   accTitle: View data and remove a transaction activity
-  accDescr: The operator views stored exchange data and may choose an existing transaction to remove.
 
   subgraph operator [System Operator]
     tx_start([Start])
