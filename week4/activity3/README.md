@@ -1,2 +1,2 @@
-![Architecture](architecture.svg)
-![Domain model](domain_model.svg)
+![Domain model](./domain_model.svg)
+![Architecture](./architecture.svg)
