@@ -14,7 +14,7 @@ and completion time.
 
 ### Application Architecture
 
-Shows how the Python classes collaborate across the presentation, service, persistence, domain-model, and error-handling layers.
+Shows how classes collaborate across the presentation, service, persistence, domain-model, and error-handling layers.
 
 `ConsoleApplication` collects input and displays results. It provide UI and UX in the app. `MoneyExchangeSystem` is the public facade. It normalizes and validates data, chooses the latest direct or reverse rate, calculates the converted amount, and coordinates CRUD operations. `MoneyExchangeDatabase` encapsulates SQLite schema creation, queries, mapping, and referential-integrity errors. The four frozen dataclasses carry results between layers. `MoneyExchangeError` is the application's base exception, and `ExchangeRateNotAvailableError` specializes it for missing direct/reverse rates.
 
