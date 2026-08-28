@@ -1,10 +1,11 @@
-"""Simple OOP example based on a university people hierarchy."""
+"""A university people hierarchy"""
 
+# Decimal was used because pay rates and salaries are monetary values to avoid rounding issues
 from decimal import Decimal
 
 
 class Person:
-    """Base class for every person at the university."""
+    """Base class for every person at the university"""
 
     def __init__(self, person_id: str, name: str) -> None:
         self.person_id = person_id
@@ -12,7 +13,7 @@ class Person:
 
 
 class Student(Person):
-    """A university student."""
+    """A university student"""
 
     def __init__(self, person_id: str, name: str, student_number: str) -> None:
         super().__init__(person_id, name)
@@ -20,7 +21,7 @@ class Student(Person):
 
 
 class Staff(Person):
-    """Base class for university staff members."""
+    """Base class for university staff members"""
 
     def __init__(
         self,
@@ -35,7 +36,7 @@ class Staff(Person):
 
 
 class Academic(Staff):
-    """An academic staff member, such as a lecturer."""
+    """An academic staff member, such as a lecturer"""
 
     def __init__(
         self,
@@ -49,16 +50,16 @@ class Academic(Staff):
         self.publications = list(publications) if publications else []
 
     def add_publication(self, title: str) -> None:
-        """Add a publication to the academic's publication list."""
+        """Add a publication to the academic's publication list"""
         self.publications.append(title)
 
     def calculate_publication_count(self) -> int:
-        """Return the number of publications written by the academic."""
+        """Return the number of publications written by the academic"""
         return len(self.publications)
 
 
 class GeneralStaff(Staff):
-    """A non-academic staff member paid from an annual salary."""
+    """A non-academic staff member paid from an annual salary"""
 
     def __init__(
         self,
@@ -82,7 +83,7 @@ class GeneralStaff(Staff):
         self.working_weeks_per_year = working_weeks_per_year
 
     def calculate_pay_rate(self) -> Decimal:
-        """Calculate and return the staff member's hourly pay rate."""
+        """Calculate and return the staff member's hourly pay rate"""
         annual_hours = (
             self.standard_hours_per_week * self.working_weeks_per_year
         )
@@ -90,23 +91,23 @@ class GeneralStaff(Staff):
 
 
 def main() -> None:
-    """Create example objects and display the requested calculations."""
+    # Create example objects and display the requested calculations
     lecturer = Academic(
         person_id="P001",
-        name="Dr Aroha Williams",
+        name="Dr Smartie Pants",
         staff_number="AC101",
         tax_number="123-456-789",
         publications=[
-            "Responsible Artificial Intelligence",
-            "Machine Learning in Education",
+            "Burst of the Artificial Intelligence bubble",
+            "Advantages of Machine Learning in Education",
             "Ethics of Automated Decision Making",
         ],
     )
 
     general_staff_member = GeneralStaff(
         person_id="P002",
-        name="James Chen",
-        staff_number="GS201",
+        name="John Doe",
+        staff_number="JD007",
         tax_number="987-654-321",
         annual_salary=Decimal("52000"),
     )
