@@ -1,0 +1,428 @@
+<mxfile host="Electron" pages="3">
+  <diagram name="Use Case" id="kva_XTFHQnQ02p3kD7oH">
+    <mxGraphModel dx="1220" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-5" parent="1" style="fontStyle=0;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="910" width="600" x="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Student" vertex="1">
+          <mxGeometry height="60" width="30" x="70" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Lecturer" vertex="1">
+          <mxGeometry height="60" width="30" x="580" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View Marks" vertex="1">
+          <mxGeometry height="70" width="140" x="150" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View Course information" vertex="1">
+          <mxGeometry height="70" width="140" x="270" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View&lt;div&gt;enrolled&lt;/div&gt;&lt;div&gt;students&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Enroll in course" vertex="1">
+          <mxGeometry height="70" width="140" x="180" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-15" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-1" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-12" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="350" y="380" as="sourcePoint" />
+            <mxPoint x="510" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-16" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-1" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="170" y="440" as="sourcePoint" />
+            <mxPoint x="250" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-18" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-1" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-14" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="200" y="465" as="sourcePoint" />
+            <mxPoint x="280" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-19" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-13" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="425" as="sourcePoint" />
+            <mxPoint x="220" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-20" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-12" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="540" y="430" as="sourcePoint" />
+            <mxPoint x="540" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View assigned courses" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-22" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-21" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="770" y="430" as="sourcePoint" />
+            <mxPoint x="510" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Update course" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-24" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="610" y="450" as="sourcePoint" />
+            <mxPoint x="540" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Update lecture information" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="796" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-26" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-25" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-23" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="350" y="540" as="sourcePoint" />
+            <mxPoint x="510" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Publish Marks" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-28" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-27" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="630" y="395" as="sourcePoint" />
+            <mxPoint x="560" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Record Marks" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-30" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.993;entryY=0.621;entryDx=0;entryDy=0;entryPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-29" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="590" y="430" as="sourcePoint" />
+            <mxPoint x="520" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View assignments" vertex="1">
+          <mxGeometry height="70" width="140" x="270" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-32" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-1" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-31" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="460" as="sourcePoint" />
+            <mxPoint x="220" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Submit assignments" vertex="1">
+          <mxGeometry height="70" width="140" x="180" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-34" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-1" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZwMQKW1CErC7Uth4c7BN-33" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="150" y="530" as="sourcePoint" />
+            <mxPoint x="230" y="755" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-35" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-31" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="600" y="470" as="sourcePoint" />
+            <mxPoint x="530" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Edit assignments" vertex="1">
+          <mxGeometry height="70" width="140" x="370" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-37" edge="1" parent="1" source="ZwMQKW1CErC7Uth4c7BN-4" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZwMQKW1CErC7Uth4c7BN-36" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="620" y="490" as="sourcePoint" />
+            <mxPoint x="550" y="815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZwMQKW1CErC7Uth4c7BN-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;span&gt;College Management System&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="275" x="212.5" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PyTsCWmaSQ6qOgYPcijR" name="Class">
+    <mxGraphModel dx="1078" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class-user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; &lt;br&gt;User&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ authenticate(password): Boolean&lt;br&gt;+ updateProfile(name, email): void" vertex="1">
+          <mxGeometry height="97.5" width="220" x="665" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="class-student" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Student&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ enroll(course): Enrollment&lt;br&gt;+ submit(assignment, fileUrl): Submission&lt;br&gt;+ viewPublishedMarks(): List&amp;lt;Mark&amp;gt;" vertex="1">
+          <mxGeometry height="110" width="270" x="270" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="class-lecturer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Lecturer&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ updateCourse(course): void&lt;br&gt;+ manageAssignment(assignment): void&lt;br&gt;+ recordMark(submission, score): Mark&lt;br&gt;+ publishMark(mark): void" vertex="1">
+          <mxGeometry height="110" width="260" x="1040" y="396.25" as="geometry" />
+        </mxCell>
+        <mxCell id="class-course" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Course&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ updateDetails(title, description): void&lt;br&gt;+ listEnrolledStudents(): List&amp;lt;Student&amp;gt;" vertex="1">
+          <mxGeometry height="97.5" width="250" x="650" y="402.5" as="geometry" />
+        </mxCell>
+        <mxCell id="class-enrollment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Enrollment&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ withdraw(): void&lt;br&gt;+ isActive(): Boolean" vertex="1">
+          <mxGeometry height="90" width="155" x="327.5" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="class-lecture" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Lecture&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ reschedule(dateTime, room): void" vertex="1">
+          <mxGeometry height="70" width="220" x="640" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="class-assignment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Assignment&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ publish(): void&lt;br&gt;+ isOpen(at): Boolean" vertex="1">
+          <mxGeometry height="80" width="170" x="930" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="class-submission" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Submission&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ replaceFile(fileUrl): void&lt;br&gt;+ isLate(dueAt): Boolean" vertex="1">
+          <mxGeometry height="90" width="180" x="830" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="class-mark" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;Mark&lt;/b&gt;&lt;br&gt;&lt;hr&gt;+ publish(): void&lt;br&gt;+ isPublished(): Boolean" vertex="1">
+          <mxGeometry height="90" width="170" x="1150" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="class-inherit-student" edge="1" parent="1" source="class-student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;strokeWidth=2;" target="class-user">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="310" />
+              <mxPoint x="730" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-inherit-lecturer" edge="1" parent="1" source="class-lecturer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;strokeWidth=2;" target="class-user">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175.06" y="300.06" />
+              <mxPoint x="820" y="300.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-teaches" edge="1" parent="1" source="class-lecturer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=2;" target="class-course" value="teaches   1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="class-student-enrollment" edge="1" parent="1" source="class-student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=2;" target="class-enrollment" value="has   1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="class-course-enrollment" edge="1" parent="1" source="class-course" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=2;" target="class-enrollment" value="contains   1 : 0..*">
+          <mxGeometry relative="1" x="0.2353" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="600" y="451.24" />
+              <mxPoint x="600" y="650.06" />
+              <mxPoint x="405.06" y="650.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-course-lecture" edge="1" parent="1" source="class-course" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=diamondThin;startFill=1;strokeWidth=2;" target="class-lecture" value="schedules   1 : 0..*">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="530" />
+              <mxPoint x="750" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-course-assignment" edge="1" parent="1" source="class-course" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=diamondThin;startFill=1;strokeWidth=2;" target="class-assignment" value="defines   1 : 0..*">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="590.06" />
+              <mxPoint x="1030" y="590.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-student-submission" edge="1" parent="1" source="class-student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=2;exitX=0.074;exitY=1.016;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" target="class-submission" value="creates   1 : 0..*">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-assignment-submission" edge="1" parent="1" source="class-assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=diamondThin;startFill=1;strokeWidth=2;" target="class-submission" value="receives   1 : 0..*">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="770" />
+              <mxPoint x="980" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-submission-mark" edge="1" parent="1" source="class-submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=diamondThin;startFill=1;strokeWidth=2;" target="class-mark" value="is graded by   1 : 0..1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="class-lecturer-mark" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeWidth=2;" value="records   1 : 0..*">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210.12" y="790.06" />
+            </Array>
+            <mxPoint x="1210" y="512.5" as="sourcePoint" />
+            <mxPoint x="1210" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="hkBOP3BbMkxX7e2VSBK1" name="Activity">
+    <mxGraphModel dx="2617" dy="3166" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="activity-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="Assignment Submission and Marking Activity" vertex="1">
+          <mxGeometry height="40" width="640" x="480" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-lecturer" parent="1" style="swimlane;html=1;horizontal=0;startSize=35;fontStyle=1;fontSize=15;" value="Lecturer" vertex="1">
+          <mxGeometry height="1070" width="430" x="110" y="-30" as="geometry">
+            <mxRectangle height="90" width="40" x="40" y="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-start" parent="lane-lecturer" style="ellipse;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="213" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act-create" parent="lane-lecturer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Create or edit assignment" vertex="1">
+          <mxGeometry height="55" width="230" x="110" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e1" edge="1" parent="lane-lecturer" source="act-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-create">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-show-errors" parent="lane-lecturer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Show validation errors" vertex="1">
+          <mxGeometry height="55" width="230" x="110" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e4" edge="1" parent="lane-lecturer" source="act-show-errors" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=15;" target="act-create" value="Correct">
+          <mxGeometry relative="1" x="0.0136" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-review" parent="lane-lecturer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Review submitted work" vertex="1">
+          <mxGeometry height="55" width="230" x="110" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="act-publish-choice" parent="lane-lecturer" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" value="Publish?" vertex="1">
+          <mxGeometry height="75" width="150" x="150" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="act-record" parent="lane-lecturer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Record score and feedback" vertex="1">
+          <mxGeometry height="55" width="230" x="110" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e13" edge="1" parent="lane-lecturer" source="act-review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-record">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e14" edge="1" parent="lane-lecturer" source="act-record" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-publish-choice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-system" parent="1" style="swimlane;html=1;horizontal=0;startSize=35;fontStyle=1;fontSize=15;" value="System" vertex="1">
+          <mxGeometry height="1070" width="500" x="540" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="act-publish-assignment" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Publish assignment" vertex="1">
+          <mxGeometry height="55" width="230" x="125" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="act-store" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Store submission and timestamp" vertex="1">
+          <mxGeometry height="55" width="260" x="110" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="act-save-draft" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Save mark as draft" vertex="1">
+          <mxGeometry height="55" width="230" x="110" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-student" parent="1" style="swimlane;html=1;horizontal=0;startSize=35;fontStyle=1;fontSize=15;" value="Student" vertex="1">
+          <mxGeometry height="1070" width="470" x="1040" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="act-view-assignment" parent="lane-student" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="View assignment" vertex="1">
+          <mxGeometry height="55" width="230" x="125" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="act-reject" parent="lane-student" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Explain deadline or file error" vertex="1">
+          <mxGeometry height="55" width="290" x="95" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="fsVFkDFYQkQRfKha5ZCw-8" parent="lane-student" style="ellipse;html=1;shape=endState;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="430" y="902.5" as="geometry" />
+        </mxCell>
+        <mxCell id="act-upload" parent="lane-student" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Upload submission" vertex="1">
+          <mxGeometry height="55" width="230" x="125" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e7" edge="1" parent="lane-student" source="act-view-assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-upload">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e10" edge="1" parent="lane-student" source="act-reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=15;" target="act-upload" value="Retry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-publish-mark" parent="lane-student" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Publish mark" vertex="1">
+          <mxGeometry height="55" width="230" x="-255" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="act-view-mark" parent="lane-student" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="View score and feedback" vertex="1">
+          <mxGeometry height="55" width="230" x="125" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e18" edge="1" parent="lane-student" source="act-publish-mark" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-view-mark">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e19" edge="1" parent="lane-student" source="act-view-mark" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fsVFkDFYQkQRfKha5ZCw-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="894" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-validate-assignment" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" value="Assignment data valid?" vertex="1">
+          <mxGeometry height="85" width="180" x="690" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="act-accept-submission" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" value="Submission acceptable?" vertex="1">
+          <mxGeometry height="85" width="180" x="690" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e2" edge="1" parent="1" source="act-create" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-validate-assignment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e3" edge="1" parent="1" source="act-validate-assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=1.006;entryY=0.611;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=15;" target="act-show-errors" value="No">
+          <mxGeometry relative="1" x="-0.7917" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="480" y="187.47" />
+              <mxPoint x="480" y="333.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e5" edge="1" parent="1" source="act-validate-assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=15;" target="act-publish-assignment" value="Yes">
+          <mxGeometry relative="1" x="0.011" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e6" edge="1" parent="1" source="act-publish-assignment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-view-assignment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="327.5" />
+              <mxPoint x="1000" y="40" />
+              <mxPoint x="1280" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e8" edge="1" parent="1" source="act-upload" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="act-accept-submission">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="297.47" />
+              <mxPoint x="1120" y="400" />
+              <mxPoint x="780" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e9" edge="1" parent="1" source="act-accept-submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=15;" target="act-reject" value="No">
+          <mxGeometry relative="1" x="-0.6735" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1207.47" y="477.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e11" edge="1" parent="1" source="act-accept-submission" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=15;" target="act-store" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e12" edge="1" parent="1" source="act-store" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="act-review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="617.5" />
+              <mxPoint x="500" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e15" edge="1" parent="1" source="act-publish-choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=15;" target="act-save-draft" value="No">
+          <mxGeometry relative="1" x="-0.25" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act-e16" edge="1" parent="1" source="act-save-draft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;dashed=1;strokeWidth=2;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=15;" target="act-publish-mark" value="Later">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act-e17" edge="1" parent="1" source="act-publish-choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" target="act-publish-mark" value="Yes">
+          <mxGeometry relative="1" x="0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="335" y="887.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
