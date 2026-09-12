@@ -1,0 +1,77 @@
+<mxfile host="Electron">
+  <diagram id="university-classes" name="University classes">
+    <mxGraphModel dx="1141" dy="904" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="880" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="person" parent="1" style="swimlane;html=1;startSize=36;fontSize=18;fontStyle=1;align=center;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#334155;strokeWidth=1.5;" value="Person" vertex="1">
+          <mxGeometry height="140" width="340" x="395" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="person-attributes" parent="person" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ name: str" vertex="1">
+          <mxGeometry height="38" width="340" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="person-divider" parent="person" style="line;strokeWidth=1;strokeColor=#334155;" value="" vertex="1">
+          <mxGeometry height="1" width="340" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="person-methods" parent="person" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ __init__(name)&lt;br&gt;+ display_details()" vertex="1">
+          <mxGeometry height="65" width="340" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="swimlane;html=1;startSize=36;fontSize=18;fontStyle=1;align=center;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#334155;strokeWidth=1.5;" value="Student" vertex="1">
+          <mxGeometry height="185" width="520" x="60" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="student-attributes" parent="student" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ student_id: str&lt;br&gt;+ course: str" vertex="1">
+          <mxGeometry height="62" width="520" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="student-divider" parent="student" style="line;strokeWidth=1;strokeColor=#334155;" value="" vertex="1">
+          <mxGeometry height="1" width="520" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="student-methods" parent="student" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ __init__(name, student_id, course)&lt;br&gt;+ display_details()&lt;br&gt;+ study()" vertex="1">
+          <mxGeometry height="86" width="520" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer" parent="1" style="swimlane;html=1;startSize=36;fontSize=18;fontStyle=1;align=center;collapsible=0;fillColor=#ffe6cc;swimlaneFillColor=#ffffff;strokeColor=#334155;strokeWidth=1.5;" value="Lecturer" vertex="1">
+          <mxGeometry height="165" width="360" x="650" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-attributes" parent="lecturer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ subject: str" vertex="1">
+          <mxGeometry height="38" width="360" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-divider" parent="lecturer" style="line;strokeWidth=1;strokeColor=#334155;" value="" vertex="1">
+          <mxGeometry height="1" width="360" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-methods" parent="lecturer" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ __init__(name, subject)&lt;br&gt;+ display_details()&lt;br&gt;+ teach()" vertex="1">
+          <mxGeometry height="90" width="360" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="postgraduate" parent="1" style="swimlane;html=1;startSize=36;fontSize=18;fontStyle=1;align=center;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#334155;strokeWidth=1.5;" value="PostgraduateStudent" vertex="1">
+          <mxGeometry height="165" width="520" x="60" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="postgraduate-attributes" parent="postgraduate" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ thesis_topic: str" vertex="1">
+          <mxGeometry height="38" width="520" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="postgraduate-divider" parent="postgraduate" style="line;strokeWidth=1;strokeColor=#334155;" value="" vertex="1">
+          <mxGeometry height="1" width="520" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="postgraduate-methods" parent="postgraduate" style="text;html=1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=9;fontSize=14;fontColor=#1e293b;" value="+ __init__(name, student_id, course, thesis_topic)&lt;br&gt;+ display_details()&lt;br&gt;+ research()" vertex="1">
+          <mxGeometry height="90" width="520" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="student-inherits-person" edge="1" parent="1" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=#334155;strokeWidth=1.5;exitX=0.5;exitY=0;entryX=0.3;entryY=1;" target="person" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="300" />
+              <mxPoint x="497" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lecturer-inherits-person" edge="1" parent="1" source="lecturer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=#334155;strokeWidth=1.5;exitX=0.5;exitY=0;entryX=0.7;entryY=1;" target="person" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="300" />
+              <mxPoint x="633" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="postgraduate-inherits-student" edge="1" parent="1" source="postgraduate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=#334155;strokeWidth=1.5;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="student" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
